@@ -13,10 +13,7 @@ services:
       - key: NODE_VERSION
         value: 20
       - key: STORAGE_DIR
-        value: /var/data
+  value: /tmp/dinmaegler-auth
       - key: CORS_ORIGIN
         value: https://fadishusser.netlify.app
-    disk:
-      name: data
-      mountPath: /var/data
-      sizeGB: 1
+    
