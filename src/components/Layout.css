@@ -1,0 +1,58 @@
+/* Layout component styles */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 100vw; /* Prevent content overflow */
+  box-sizing: border-box;
+}
+
+/* Ensure the layout takes full height */
+.layout > header {
+  flex-shrink: 0;
+}
+
+.layout > footer {
+  flex-shrink: 0;
+  margin-top: 4em;
+}
+
+/* Mobile First Approach */
+.main-content {
+  padding: 0;
+}
+
+/* Tablet and up */
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding: 0;
+  }
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 767px) {
+  .layout {
+    padding-top: 1px; /* Account for fixed header */
+  }
+  
+  .main-content {
+    padding: 10px;
+    min-height: calc(100vh - 140px);
+  }
+}
+
+/* Very small mobile phones */
+@media (max-width: 380px) {
+  
+  .main-content {
+    padding: 5px;
+    min-height: calc(100vh - 160px);
+  }
+}

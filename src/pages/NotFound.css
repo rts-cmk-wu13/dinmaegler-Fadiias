@@ -1,0 +1,72 @@
+/* 404 Not Found styles */
+.notfound-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:  #EEF7FF;
+}
+
+.notfound-content {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.notfound-code {
+  font-size: 6rem;  
+  font-weight: 800;
+
+  color: #ffffff;
+
+  -webkit-text-stroke: 1px #000000; 
+  -webkit-text-fill-color: #ffffff;
+  text-shadow:
+    1px 0 0 #0a244a, -1px 0 0 #0a244a,
+    0 1px 0 #0a244a,  0 -1px 0 #0a244a,
+    1px 1px 0 #0a244a, -1px -1px 0 #0a244a,
+    1px -1px 0 #0a244a, -1px 1px 0 #0a244a;
+box-shadow: 0px 63px 34px 61px lightskyblue;
+}
+
+.notfound-content h1 {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 1.75rem;
+  color: #0a244a;
+}
+
+.notfound-content p {
+  color: #5a6a85;
+  max-width: 540px;
+  margin: 0 auto 1.5rem;
+}
+
+.notfound-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.625rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #0a244a;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0d2d5e;
+}
+
+.btn-secondary {
+  background: #e7eef8;
+  color: #0a244a;
+}
+
+.btn-secondary:hover {
+  background: #d6e3f8;
+}
