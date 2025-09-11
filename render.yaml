@@ -3,7 +3,7 @@ services:
     name: dinmaegler-auth
     env: node
     plan: free
-  buildCommand: npm install --omit=dev
+    buildCommand: npm install --omit=dev
     startCommand: npm run start
     autoDeploy: true
     healthCheckPath: /health
