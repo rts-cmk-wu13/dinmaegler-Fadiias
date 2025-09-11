@@ -3,11 +3,15 @@ services:
     name: dinmaegler-auth
     env: node
     plan: free
-    buildCommand: npm ci
+  buildCommand: npm install --omit=dev
     startCommand: npm run start
     autoDeploy: true
     healthCheckPath: /health
     envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20
       - key: STORAGE_DIR
         value: /var/data
       - key: CORS_ORIGIN
